@@ -1,4 +1,4 @@
-package med.voll.api.medico;
+package med.voll.api.domain.medico;
 
 public record DatosListaMedico(
         Long id,
@@ -8,7 +8,7 @@ public record DatosListaMedico(
         String email,
         String telefono
 ) {
-    public DatosListaMedico(Medico medico) {
+    public DatosListaMedico(Medicos medico) {
         this(
                 medico.getId(),
                 medico.getNombre(),
